@@ -358,26 +358,53 @@
             <div>
                 <button class="modal-close" data-modal-close ><svg class="modal-icon-close btn"> <use href="./images/symbol-defs.svg#icon-cancel"></use> </svg></button>
             </div>
-            <h2 class="modal-title">Залиште свої дані, ми вам передзвонимо</h2>
+            <p class="modal-title">Залиште свої дані, ми вам передзвонимо</p>
             <form class="modal-text">
-                    <lable  class="abc" ><svg class="name-icon-text"><use href="./images/symbol-defs.svg#icon-person" ></use>
-                    </svg>Ім'я<input class="modal-space" type="name">
-                    </lable>
+                    <lable  class="abc" for="name" >Ім'я</lable>
+                    <span class="icon-area">
+                        <input 
+                        class="modal-space" 
+                        type="text"
+                        name="name"
+                        id="name"
+                        title="Valentyn Strykalo"
+                        required>
+                        <svg class="name-icon-text"><use href="./images/symbol-defs.svg#icon-person" ></use>
+                        </svg>
+                    </span>
 
-                    <lable class="abc"  ><svg class="name-icon-text"><use href="./images/symbol-defs.svg#icon-phone" ></use>
-                    </svg>Телефон<input class="modal-space" type="tel">
-                    </lable>
+                    <lable class="abc" for="tel">Телефон</lable>
+                    <span class="icon-area">
+                        <input 
+                        class="modal-space" 
+                        type="tel"
+                        name="tel"
+                        id="tel"
+                        title="+380 (99) 00 09 090"
+                        required>
+                        <svg class="name-icon-text"><use href="./images/symbol-defs.svg#icon-phone" ></use>
+                        </svg>
+                    </span>
 
-                    <lable  class="abc" ><svg class="name-icon-text"><use href="./images/symbol-defs.svg#icon-email" ></use>
-                    </svg>Пошта<input class="modal-space" type="email">
-                    </lable>
+                    <lable for="email" class="abc" >Пошта</lable>
+                    <span class="icon-area">
+                        <input 
+                        id="email" 
+                        class="modal-space" 
+                        type="email"
+                        name="email"
+                        title="valentyn-valentyn@mail.com"
+                        required>
+                        <svg class="name-icon-text"><use href="./images/symbol-defs.svg#icon-email" ></use>
+                        </svg>
+                    </span>
 
-                    <label class="comment-window" for="comment">Коментар
-                        <textarea class="comment-modal" name="comment" id="comment"  placeholder="Введіть текст">
-                        </textarea></label>
+                    <label class="comment-window" for="comment">Коментар</label>
+                        <textarea class="comment-modal" name="comment" id="comment"  placeholder="Введіть текст"></textarea>
 
                     <label class="form-input-modal" for="policy">
-                        <input class="form-label-modalb" type="checkbox" name="policy" id="policy"> <svg class="modal-check" width="16" height="15"><use href="./images/symbol-defs.svg#icon-check"></use></svg> Погоджуюся з розсилкою та приймаю
+                        <span class="form-label"><input class="form-label-modal" type="checkbox" name="policy" id="policy"><svg class="modal-check" width="16" height="15"><use href="./images/symbol-defs.svg#vector-check"></use></svg> </span>
+                        Погоджуюся з розсилкою та приймаю
                         <a target="_blank" rel="noreferrer nofollow noopener" href="https://vizamarket.com/blog-o-polshe/rabota-polshu/trudovoj-dogovor-umova-zleczeniya/">Умови договору</a>
                     </label>
 
