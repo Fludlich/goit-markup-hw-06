@@ -769,12 +769,6 @@ position: relative;
   left:15px;
 
 }
-.icon-area:focus-within{
-  fill:var(--accent-color);
-}
-.modal-space:focus{
-  outline: 1px solid var(--accent-color);
-}
 
 .modal-space{
   padding: 11px 42px;
@@ -783,6 +777,13 @@ position: relative;
   border-radius: 4px;
   transition: outline 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+.modal-space:focus{
+  outline: 1px solid var(--accent-color);
+}
+.icon-area:focus-within{
+  fill:var(--accent-color);
+}
+
 .comment-window{
   margin-top: 10px;
   margin-bottom: 4px;
