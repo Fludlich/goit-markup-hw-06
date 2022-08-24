@@ -8,6 +8,15 @@
   --bcg-space-color: #2f303a;
   --fill-icon-color: #AFB1B8;
 }
+@keyframes rotator{
+  0%{
+    transform: rotate(0);
+    border-radius: 0;
+  }
+  100%{
+    transform: rotate(360deg);
+  }
+}
 .container {
   max-width: 1200px;
   width: 100%;
@@ -655,6 +664,7 @@ transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   margin: 0;
 }
 /* =============modal================ */
+
 .backdrop{
   position: fixed;
   width: 100%;
@@ -662,19 +672,26 @@ transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   top: 0;
   left: 0%;
   background-color:rgba(0, 0, 0, 0.2);
+  animation-name: rotator;
+  animation-duration: 250ms;
+  animation-timing-function: linear;
+  animation-direction: normal;
+  animation-fill-mode: forwards;
 }
 .is-hidden{
   opacity: 0;
   pointer-events: none;
 }
+.modal{
 
+}
 .modal{
   padding: 40px;
 position: absolute;
 top: 50%;
 left: 50%;
-transform: translate(-50%, -50%);
 
+transform: translate(-50%, -50%) ;
 min-height: 581px;
 min-width: 528px;
 
@@ -684,9 +701,9 @@ box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2),
 0px 1px 1px 0px rgba(0, 0, 0, 0.14),
 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
 
-
-
 }
+
+
 .modal-close{
 position: absolute;
 top: 8px;
@@ -742,6 +759,7 @@ color: rgb(117, 117, 117, 1);
 .icon-area{
 position: relative;
 }
+/* .abc:focus + */
 .name-icon-text{
   position: absolute;
   width: 18px;
@@ -813,7 +831,11 @@ font-size: 14px;
 line-height: 2;
 }
 .form-input-modal a{
-  
+
+font-size: 14px;
+line-height: 1.71;
+letter-spacing: 0.03em;
+
   color: rgba(33, 150, 243, 1);
   margin-left: 5px;
 }
@@ -825,7 +847,10 @@ align-items: center;
 margin-right: 7px;
 }
 .form-label-modal{
-  
+font-size: 14px;
+line-height: 1.71;
+letter-spacing: 0.03em;
+
   appearance: none;
   border: 2px solid rgba(33, 33, 33, 1);
   border-radius: 20%;
@@ -867,7 +892,26 @@ transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 .btn-modal:hover,
 .btn-modal:hover{
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  color: transparent;
 }
+
+/* input:-webkit-autofill { 
+  -webkit-background-clip: text;
+} */
+
+input:-webkit-autofill
+{
+    -webkit-box-shadow: 0 0 0 30px white inset !important;
+}
+.footer input:-webkit-autofill{
+  -webkit-box-shadow: 0 0 0 30px rgba(47, 48, 58, 1) inset !important;
+}
+.footer input:-webkit-autofill{
+  -webkit-text-fill-color: white !important;
+}
+/* .footer input:-webkit-autofill{
+  -webkit-border-image: 1px solid var(--accent-color);
+} */
 /* -----------------footer-mail---------------- */
 .footer-follow{
   margin-left: 93px;
