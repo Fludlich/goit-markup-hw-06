@@ -929,10 +929,11 @@ input:-webkit-autofill
   border-radius: 4px;
   width: 358px;
   padding: 15px;
-  transition: outline 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .form-input:focus{
-  outline: 1px solid var(--accent-color);
+  border: 1px solid var(--accent-color);
+  outline: none;
 }
 .btn-follow{
   display: flex;
