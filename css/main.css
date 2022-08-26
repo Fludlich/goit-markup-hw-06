@@ -20,6 +20,8 @@ body {
   --fill-icon-color: #AFB1B8;
   --border-check-color: rgba(117, 117, 117, 1);
   --border-color: rgba(33, 33, 33, 1);
+  --placeholder-color: rgba(117, 117, 117, 0,5);
+  --text-link-color: rgba(33, 150, 243, 1);
 }
 
 html {
@@ -849,7 +851,7 @@ img {
   transform: translate(-50%, -50%);
   min-height: 581px;
   min-width: 528px;
-  background-color: #FFFFFF;
+  background-color: var(--primary-white-color);
   border-radius: 4px;
   box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
 }
@@ -862,7 +864,7 @@ img {
   width: 33px;
   height: 33px;
   border: 1px solid var(--fill-space-color);
-  background-color: #fff;
+  background-color: var(--primary-white-color);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -890,7 +892,7 @@ img {
   line-height: 1.15;
   text-align: center;
   letter-spacing: 0.03em;
-  color: #212121;
+  color: var(--tytle-text-color);
 }
 
 .modal-text {
@@ -903,7 +905,7 @@ img {
   font-size: 12px;
   line-height: 1.16;
   letter-spacing: 0.01em;
-  color: rgb(117, 117, 117);
+  color: ver(--border-check-color);
   margin-top: 10px;
   margin-bottom: 4px;
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -945,7 +947,7 @@ img {
   font-size: 12px;
   line-height: 1.16;
   letter-spacing: 0.01em;
-  color: rgb(117, 117, 117);
+  color: var(--border-check-color);
 }
 
 .comment-modal {
@@ -961,18 +963,21 @@ img {
 }
 
 .comment-modal::-moz-placeholder {
+  color: var(-placeholder-color);
   font-size: 12px;
   line-height: 1.16;
   letter-spacing: 0.01em;
 }
 
 .comment-modal:-ms-input-placeholder {
+  color: var(-placeholder-color);
   font-size: 12px;
   line-height: 1.16;
   letter-spacing: 0.01em;
 }
 
 .comment-modal::placeholder {
+  color: var(-placeholder-color);
   font-size: 12px;
   line-height: 1.16;
   letter-spacing: 0.01em;
@@ -1001,7 +1006,7 @@ img {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
-  color: rgb(33, 150, 243);
+  color: var(--text-link-color);
   margin-left: 5px;
 }
 
@@ -1057,4 +1062,21 @@ img {
   font-size: 16px;
   line-height: 1.8;
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.btn-modal:hover,
+.btn-modal:focus {
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+}
+
+input:-webkit-autofill {
+  box-shadow: 0 0 0 30px white inset !important;
+}
+
+.footer input:-webkit-autofill {
+  box-shadow: 0 0 0 30px rgb(47, 48, 58) inset !important;
+}
+
+.footer input:-webkit-autofill {
+  -webkit-text-fill-color: white !important;
 }/*# sourceMappingURL=main.css.map */
