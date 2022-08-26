@@ -1,0 +1,46 @@
+.hero {
+    display: flex;
+    background-color: var(--bcg-space-color);
+    text-align: center;
+    min-height: 600px;
+    align-items: center;
+    
+  }
+  .hero-tytle {
+    max-width: 1600px;
+    margin: 0  auto 30px;
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--primary-white-color);
+    max-width: 696px;
+  }
+  .hero {
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/bcgstudio.jpg);
+  
+  }
+  .btn-hero {
+    padding: 10px 32px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
+    align-items: center;
+    letter-spacing: 0.06em;
+    color: var(--primary-white-color);
+    background-color: var(--accent-color);
+    border: 1px solid transparent;
+    border-radius: 5px;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .btn-hero:focus {
+    background-color: var(--accent-color);
+    color: var(--primary-white-color);
+  }
